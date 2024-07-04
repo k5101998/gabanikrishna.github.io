@@ -1,7 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -9,6 +11,7 @@ header {
     color: #fff;
     padding: 40px 0;
     text-align: center;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
 .container {
@@ -19,7 +22,7 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 p {
@@ -30,6 +33,7 @@ nav {
     background: #444;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
@@ -48,6 +52,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
 }
 
 section {
@@ -55,25 +64,47 @@ section {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .project, .experience, .education, .testimonial {
-    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin: 20px 0;
     padding: 20px;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
 .project:hover, .experience:hover, .education:hover, .testimonial:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Skills Icons */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills ul li {
+    font-size: 2em;
 }
 
 /* Animation */
 .fade-in {
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1.5s forwards;
 }
 
 @keyframes fadeIn {
