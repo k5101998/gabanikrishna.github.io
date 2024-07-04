@@ -89,7 +89,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Skills Icons */
 #skills ul {
     list-style: none;
     padding: 0;
@@ -99,6 +98,17 @@ footer {
 
 #skills ul li {
     font-size: 2em;
+}
+
+/* Theme and Color Alternation */
+.section-light {
+    background: #fff;
+    color: #333;
+}
+
+.section-dark {
+    background: #333;
+    color: #fff;
 }
 
 /* Animation */
